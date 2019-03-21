@@ -52,7 +52,7 @@ class smsController extends Controller
 	   $numbers = $_POST['phone'];
 	  // print_r($numbers);
 	  // die;
-	   $sender = urlencode('TXTLCL');
+	   $sender = urlencode('CDFCLO');
 	   $datas =  implode( ", ", $data );
 	   $data = "SUCCESS \n" . $datas;
 	   $message = rawurlencode( $data);
