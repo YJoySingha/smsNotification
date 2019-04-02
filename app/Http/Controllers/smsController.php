@@ -48,11 +48,11 @@ class smsController extends Controller
 	
 	public function smsOtp($data){
 		
-		$apiKey = urlencode('PR5SOQFNSWOvEbsF-LsqQPTe71VrDju3FSFEWQxJDaOHmdoXFOcFIp');
+		$apiKey = urlencode('apiKeyHere');
 	   $numbers = $_POST['phone'];
 	  // print_r($numbers);
 	  // die;
-	   $sender = urlencode('CDFCLO');
+	   $sender = urlencode('apiCharactercode');
 	   $datas =  implode( ", ", $data );
 	   $data = "SUCCESS \n" . $datas;
 	   $message = rawurlencode( $data);
